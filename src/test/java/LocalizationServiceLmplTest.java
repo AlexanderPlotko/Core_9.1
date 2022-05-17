@@ -6,7 +6,7 @@ import ru.netology.i18n.LocalizationServiceImpl;
 
 public class LocalizationServiceLmplTest {
     @Test
-    void test_locale() {
+    void test_locale_RUS() {
 
         LocalizationService localizationService = new LocalizationServiceImpl();
         String actual = localizationService.locale(Country.RUSSIA);
@@ -15,11 +15,11 @@ public class LocalizationServiceLmplTest {
     }
 
     @Test
-    void test_locale1() {
+    void test_locale_USA() {
 
         LocalizationService localizationService = new LocalizationServiceImpl();
         String actual1 = localizationService.locale(Country.USA);
-        String expected1 = "Добро пожаловать";
+        String expected1 = "Welcome";
         Assertions.assertEquals(expected1, actual1);
     }
 }
